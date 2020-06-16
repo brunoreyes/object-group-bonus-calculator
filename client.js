@@ -40,35 +40,37 @@ function logEmployees(employees) {
   }
 }
 //logEmployees(employees);
-//expect employees array
 
 
-/*
-    name: 'Mayella',
-    employeeNumber: '89068',
-    annualSalary: '35000',
-    reviewRating: 1
-*/
+// create function that loops through employees
+// and sends each one to another funciton
+// processEmploeeInfo
+function createBonusEmployees() {
+  for (let i=0; i<employees.length; i++) {
+    let newEmployee = processEmployeeInfo(employees[i]);
+    console.log(newEmployee);
+  }
+}
 
-function processEmployeeInfo() {
-  let bonusEmployees = [];
-  
-  for (employee of employees) {
-    
-    let bonus = {
+let bonusEmployees = [];
+
+function processEmployeeInfo(employee) {
+  let bonus = {
       name: employee.name,
       bonusPercentage: 0,
       totalCompensation: 0,
       totalBonus: 0
     } 
-
-    bonusEmployees.push(bonus);
-  }
-
-  return bonusEmployees
+  return bonus;
 }
 
-console.log(processEmployeeInfo())
+createBonusEmployees();
+//console.log(processEmployeeInfo())
 
+function bla () {
+  for (let i=0; i < bonusEmployees.length; i++) {
+    
+  }
+}
 
-// // console.log(employees);
+// console.log(employees);
