@@ -42,6 +42,8 @@ function logEmployees(employees) {
 //logEmployees(employees);
 
 
+let bonusEmployees = [];
+
 // create function that loops through employees
 // and sends each one to another funciton
 // processEmploeeInfo
@@ -49,10 +51,10 @@ function createBonusEmployees() {
   for (let i=0; i<employees.length; i++) {
     let newEmployee = processEmployeeInfo(employees[i]);
     console.log(newEmployee);
+    bonusEmployees.push(newEmployee);
   }
 }
 
-let bonusEmployees = [];
 
 function processEmployeeInfo(employee) {
   let bonus = {
@@ -66,10 +68,22 @@ function processEmployeeInfo(employee) {
 
 createBonusEmployees();
 //console.log(processEmployeeInfo())
+// var results = bonusEmployees.filter(function (employee) { return employee.name === "green"; })
 
-function bla () {
-  for (let i=0; i < bonusEmployees.length; i++) {
-    
+function findEmployee (bonusEmployee) {
+  let result = employees.filter(function (bonusEmployee) { return bonusEmployee.name === employee.name; })
+}
+
+
+
+function doThing () {
+  for (let i=0; i < employees.length; i++) {
+    var result = employees.filter(function (employee) { return employee.name === "green"; })
+
+    //if ()
+
+
+
   }
 }
 
