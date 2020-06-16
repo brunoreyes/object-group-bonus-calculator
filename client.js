@@ -31,13 +31,30 @@ const employees = [
   }
 ];
 
-// YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
+// write function that takes employee object
+// returns new object
 
-// Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
-// This problem is massive! Break the problem down. Use the debugger.
-// What is the fewest lines of code I can write and test to get just a little closer?
+function logEmployees(employees) {
+  for (employee of employees) {
+    console.log(employee);
+  }
+}
+logEmployees(employees);
+//expect employees array
 
-// This is not a race. Everyone on your team should understand what is happening.
-// Ask questions when you don't.
 
-console.log( employees );
+/*
+    name: 'Mayella',
+    employeeNumber: '89068',
+    annualSalary: '35000',
+    reviewRating: 1
+*/
+function processEmployeeInfo() {
+  for (employee of employees) {
+    
+  }
+}
+
+
+
+// // console.log(employees);
