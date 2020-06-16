@@ -39,7 +39,7 @@ function logEmployees(employees) {
     console.log(employee);
   }
 }
-logEmployees(employees);
+//logEmployees(employees);
 //expect employees array
 
 
@@ -49,12 +49,26 @@ logEmployees(employees);
     annualSalary: '35000',
     reviewRating: 1
 */
+
 function processEmployeeInfo() {
+  let bonusEmployees = [];
+  
   for (employee of employees) {
     
+    let bonus = {
+      name: employee.name,
+      bonusPercentage: 0,
+      totalCompensation: 0,
+      totalBonus: 0
+    } 
+
+    bonusEmployees.push(bonus);
   }
+
+  return bonusEmployees
 }
 
+console.log(processEmployeeInfo())
 
 
 // // console.log(employees);
