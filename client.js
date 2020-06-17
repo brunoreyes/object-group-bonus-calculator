@@ -48,7 +48,7 @@ let bonusEmployees = [];
 // and sends each one to another funciton
 // processEmploeeInfo
 function createBonusEmployees() {
-  for (let i=0; i<employees.length; i++) {
+  for (let i = 0; i < employees.length; i++) {
     let newEmployee = processEmployeeInfo(employees[i]);
     console.log(newEmployee);
     bonusEmployees.push(newEmployee);
@@ -58,11 +58,11 @@ function createBonusEmployees() {
 
 function processEmployeeInfo(employee) {
   let bonus = {
-      name: employee.name,
-      bonusPercentage: 0,
-      totalCompensation: 0,
-      totalBonus: 0
-    } 
+    name: employee.name,
+    bonusPercentage: 0,
+    totalCompensation: 0,
+    totalBonus: 0
+  }
   return bonus;
 }
 
@@ -70,14 +70,16 @@ createBonusEmployees();
 //console.log(processEmployeeInfo())
 // var results = bonusEmployees.filter(function (employee) { return employee.name === "green"; })
 
-function findEmployee (bonusEmployee) {
-  let result = employees.filter(function (bonusEmployee) { return bonusEmployee.name === employee.name; })
+function findEmployee(bonusEmployees) {
+  let result = employees.filter(function (bonusEmployees) {
+    return bonusEmployees.name === employees.name;
+  })
 }
 
+console.log(findEmployee(employees[0]));
 
-
-function doThing () {
-  for (let i=0; i < employees.length; i++) {
+function doThing() {
+  for (let i = 0; i < employees.length; i++) {
     var result = employees.filter(function (employee) { return employee.name === "green"; })
 
     //if ()
@@ -86,5 +88,4 @@ function doThing () {
 
   }
 }
-
 // console.log(employees);
